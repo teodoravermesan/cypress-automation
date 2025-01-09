@@ -5,7 +5,7 @@ pipeline {
 
 		stage('Run Tests'){
 				steps{
-					bat 'npm test && npm run merge:reports && npm run generate:report'
+					bat 'npm test'
 				}
 		}
 		stage('Publish HTML Report'){

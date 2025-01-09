@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage('Run Tests'){
 				steps{
-					bat 'npm test'
+					bat 'npx cypress run'
 				}
 		}
 		stage('Publish HTML Report'){

@@ -2,7 +2,7 @@
 pipeline {
 	agent any
 	stages {
-             stage('32432'){
+             stage('Build'){
 				steps{
 					bat 'npm install'
 				}
@@ -14,7 +14,7 @@ pipeline {
 		}
 		stage('Publish HTML Report'){
 				steps{
-					publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'cypress/reports/html', reportFiles: 'report.html', reportName: 'HTML Report', reportTitles: ''])
+					publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'cypress/reports/html', reportFiles: 'report.html', reportName: 'HTML Report', reportTitles: 'Report'])
 				}
 		}
 	}

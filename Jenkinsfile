@@ -10,7 +10,7 @@ pipeline {
 		}
 		stage('Publish HTML Report'){
 				steps{
-					publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: true, reportDir: 'cypress/reports/html', reportFiles: 'report.html', reportName: 'HTML Report', reportTitles: 'Report'])
+					publishHTML([allowMissing: false, alwaysLinkToLastBuild: true, keepAll: false, reportDir: 'cypress/reports/html', reportFiles: 'report.html', reportName: 'HTML Report', reportTitles: ''])
 				}
 		}
 	}

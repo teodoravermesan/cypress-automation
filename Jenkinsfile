@@ -17,8 +17,8 @@ pipeline {
 				publishHTML (target : [allowMissing: false,
  alwaysLinkToLastBuild: true,
  keepAll: true,
- reportDir: 'cypress/reports',
- reportFiles: 'myreport.html',
+ reportDir: 'cypress/reports/html',
+ reportFiles: 'index.html',
  reportName: 'My Reports',
  reportTitles: 'The Report'])
 				}

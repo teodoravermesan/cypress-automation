@@ -2,9 +2,19 @@
 pipeline {
 	agent any
 	stages {
+		stage('Clone Git Repo'){
+				steps{
+					git https://github.com/teodoravermesan/cypress-automation'
+		    }
+		}
+		stage('Install Dependencies'){
+				steps{
+					bat 'npm install'
+				}
+		}
 		stage('Run Tests'){
 				steps{
-					bat 'npx cypress run'
+					bat 'npm test'
 				}
 		}
 		stage('Publish HTML Report'){

@@ -5,7 +5,7 @@ pipeline {
 
 		stage('Run Tests'){
 				steps{
-					bat 'cypress run'
+					bat 'npm test && npm run merge:reports && npm run generate:report'
 				}
 		}
 		stage('Publish HTML Report'){

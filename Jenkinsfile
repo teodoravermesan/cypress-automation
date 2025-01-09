@@ -4,7 +4,7 @@ pipeline {
 	stages {
 		stage('Clone Git Repo'){
 				steps{
-					git https://github.com/teodoravermesan/cypress-automation'
+					git 'https://github.com/teodoravermesan/cypress-automation'
 		    }
 		}
 		stage('Install Dependencies'){

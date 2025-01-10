@@ -9,7 +9,7 @@ module.exports = defineConfig({
       on("file:preprocessor", cucumber());
     },
     //  testIsolation: false,
-    specPattern: "cypress/e2e/*.feature",
+    specPattern: "cypress/e2e/",
     // supportFile: false,
   },
 });

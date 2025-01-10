@@ -1,10 +1,10 @@
 import Homepage from "./pageObjects/homepage";
 import LoggedInPage from "./pageObjects/LoggedInPage";
 
-describe("Test Login", () => {
+describe("Basic Login Flow", () => {
   const homePage = new Homepage();
   const loggedInPage = new LoggedInPage();
-  it("Launch Login Page", () => {
+  it("Open login page", () => {
     cy.visit("https://practicetestautomation.com/practice-test-login/");
   });
 
@@ -17,7 +17,7 @@ describe("Test Login", () => {
   it("Click on Login button", () => {
     homePage.getLoginButton().click();
   });
-  it("Check login was succesfully", () => {
+  it("Check login was done succesfully", () => {
     loggedInPage.getTitle().contains("Logged In Successfully");
   });
 
@@ -25,7 +25,7 @@ describe("Test Login", () => {
     loggedInPage.getLogOutButton().click();
   });
 
-  it("Check logout wassuccesfully", () => {
+  it("Check logout was done succesfully", () => {
     homePage.getTitle().contains("Test login");
   });
 });

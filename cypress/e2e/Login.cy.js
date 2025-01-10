@@ -4,28 +4,28 @@ import LoggedInPage from "./pageObjects/LoggedInPage";
 describe("Basic Login Flow", () => {
   const homePage = new Homepage();
   const loggedInPage = new LoggedInPage();
-  it("Open login page", () => {
+  it("I Open login page", () => {
     cy.visit("https://practicetestautomation.com/practice-test-login/");
   });
 
-  it("Enter username", () => {
+  it("I enter username", () => {
     homePage.getUsername().type("student");
   });
-  it("Enter password", () => {
+  it("I enter password", () => {
     homePage.getPassword().type("Password123");
   });
-  it("Click on Login button", () => {
+  it("I click on Login button", () => {
     homePage.getLoginButton().click();
   });
-  it("Check login was done succesfully", () => {
+  it("I check login was done succesfully", () => {
     loggedInPage.getTitle().contains("Logged In Successfully");
   });
 
-  it("Click on Log out button", () => {
+  it("I click on Log out button", () => {
     loggedInPage.getLogOutButton().click();
   });
 
-  it("Check logout was done succesfully", () => {
+  it("I check logout was done succesfully", () => {
     homePage.getTitle().contains("Test login");
   });
 });

@@ -32,7 +32,7 @@
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     },
-    "nonGlobalStepDefinitions": true,
+    "nonGlobalStepDefinitions": false,
     "stepDefinitions": "cypress/e2e/cucumber"
   },
   "dependencies": {

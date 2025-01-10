@@ -22,7 +22,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 2336000000
+              "duration": 3423000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I enter a username",
             "result": {
               "status": "passed",
-              "duration": 252000000
+              "duration": 270000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I enter a password",
             "result": {
               "status": "passed",
-              "duration": 280000000
+              "duration": 297000000
             }
           },
           {
@@ -52,7 +52,7 @@
             "name": "I click on the Login button",
             "result": {
               "status": "passed",
-              "duration": 1378000000
+              "duration": 1188000000
             }
           },
           {
@@ -62,7 +62,7 @@
             "name": "Check login was done succesfully",
             "result": {
               "status": "passed",
-              "duration": 11000000
+              "duration": 10000000
             }
           },
           {
@@ -72,7 +72,7 @@
             "name": "I click on the Logout button",
             "result": {
               "status": "passed",
-              "duration": 622000000
+              "duration": 566000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "Logout was done succesfully",
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 16000000
             }
           }
         ]

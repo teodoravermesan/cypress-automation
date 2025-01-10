@@ -1,14 +1,14 @@
 [
   {
     "keyword": "Feature",
-    "name": "Login Test",
+    "name": "Basic Flow Login",
     "line": 1,
-    "id": "login-test",
+    "id": "basic-flow-login",
     "tags": [],
     "uri": "login.feature",
     "elements": [
       {
-        "id": "login-test;login",
+        "id": "basic-flow-login;login",
         "keyword": "Scenario",
         "line": 3,
         "name": "Login",
@@ -22,37 +22,37 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 3823000000
+              "duration": 2336000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "I enter username",
+            "name": "I enter a username",
             "result": {
               "status": "passed",
-              "duration": 298000000
+              "duration": 252000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 7,
-            "name": "I enter password",
+            "name": "I enter a password",
             "result": {
               "status": "passed",
-              "duration": 288000000
+              "duration": 280000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 8,
-            "name": "I click on Login button",
+            "name": "I click on the Login button",
             "result": {
               "status": "passed",
-              "duration": 1297000000
+              "duration": 1378000000
             }
           },
           {
@@ -62,17 +62,17 @@
             "name": "Check login was done succesfully",
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 11000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I click on Logout button",
+            "name": "I click on the Logout button",
             "result": {
               "status": "passed",
-              "duration": 626000000
+              "duration": 622000000
             }
           },
           {
@@ -82,7 +82,7 @@
             "name": "Logout was done succesfully",
             "result": {
               "status": "passed",
-              "duration": 20000000
+              "duration": 17000000
             }
           }
         ]

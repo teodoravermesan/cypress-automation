@@ -24,6 +24,10 @@
     "mocha": "^11.0.1",
     "mochawesome": "^7.1.3"
   },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/e2e/cucumber"
+  },
   "dependencies": {
     "-": "^0.0.1",
     "save-dev": "^0.0.1-security"

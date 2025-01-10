@@ -7,10 +7,11 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "cypress:run": "cypress run",
-    "cypress:open": "cypress open",
+    "test": "npx cypress run",
+    "cypress:run": "npx cypress run",
+    "cypress:open": "npx cypress open",
     "delete:reports": "rm cypress/reports/html/index.html && rm cypress/reports/cucumber-json/login.cucumber.json",
-    "test": "npm run delete:reports && npm test && npm run generate:report"
+    "test:run": "npm run delete:reports && npm test"
   },
   "devDependencies": {
     "cypress": "^13.17.0",

@@ -7,13 +7,10 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run",
-    "cypress:run": "cypress run",
-    "cypress:open": "cypress open",
+    "cypress:run": "npm run cypress run",
+    "cypress:open": "npm run cypress open",
     "delete:reports": "rm cypress/reports/html/index.html && rm cypress/reports/cucumber-json/login.cucumber.json",
-    "merge:reports": "mochawesome-merge  cypress/reports/mocha/*.json -o cypress/reports/report.json",
-    "generate:report": "marge mochawesome.json --reportFilename mochawesomeReport.html",
-    "test:mochawesome": "npm test && npm run merge:reports && npm run generate:report"
+    "test": "npm run delete:reports && npm test && npm run generate:report"
   },
   "devDependencies": {
     "cypress": "^13.17.0",

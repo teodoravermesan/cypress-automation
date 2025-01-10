@@ -1,17 +1,17 @@
 [
   {
     "keyword": "Feature",
-    "name": "Basic Flow Login",
+    "name": "Login flow",
     "line": 1,
-    "id": "basic-flow-login",
+    "id": "login-flow",
     "tags": [],
     "uri": "login.feature",
     "elements": [
       {
-        "id": "basic-flow-login;login",
+        "id": "login-flow;login-with-credentials-and-then-logout",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Login",
+        "name": "Login with credentials and then logout",
         "tags": [],
         "type": "scenario",
         "steps": [
@@ -22,7 +22,7 @@
             "name": "I open login page",
             "result": {
               "status": "passed",
-              "duration": 3359000000
+              "duration": 2385000000
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "I enter a username",
             "result": {
               "status": "passed",
-              "duration": 326000000
+              "duration": 260000000
             }
           },
           {
@@ -42,7 +42,7 @@
             "name": "I enter a password",
             "result": {
               "status": "passed",
-              "duration": 317000000
+              "duration": 303000000
             }
           },
           {
@@ -52,17 +52,17 @@
             "name": "I click on the Login button",
             "result": {
               "status": "passed",
-              "duration": 1178000000
+              "duration": 1370000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "Check login was done succesfully",
+            "name": "I check login was done succesfully",
             "result": {
               "status": "passed",
-              "duration": 12000000
+              "duration": 17000000
             }
           },
           {
@@ -72,17 +72,17 @@
             "name": "I click on the Logout button",
             "result": {
               "status": "passed",
-              "duration": 689000000
+              "duration": 701000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 11,
-            "name": "Logout was done succesfully",
+            "name": "I check logout was done succesfully",
             "result": {
               "status": "passed",
-              "duration": 30000000
+              "duration": 47000000
             }
           }
         ]

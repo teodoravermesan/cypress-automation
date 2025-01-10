@@ -16,7 +16,7 @@ Then("I click on the Login button", () => {
   cy.get("#submit").click();
 });
 
-Then("Check login was done succesfully", () => {
+Then("i check login was done succesfully", () => {
   cy.get("[class='post-title']").contains("Logged In Successfully");
 });
 
@@ -26,6 +26,6 @@ Then("I click on the Logout button", () => {
   ).click();
 });
 
-Then("Logout was done succesfully", () => {
+Then("I check logout was done succesfully", () => {
   cy.get("#login").contains("Test login");
 });

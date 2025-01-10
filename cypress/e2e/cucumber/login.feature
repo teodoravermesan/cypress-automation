@@ -1,6 +1,6 @@
-Feature: Basic Flow Login
+Feature: Login flow
 
-Scenario: Login
+Scenario: Login with credentials and then logout
 
 Given I open login page
 Then I enter a username

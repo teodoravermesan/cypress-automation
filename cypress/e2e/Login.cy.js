@@ -1,7 +1,7 @@
 import Homepage from "./pageObjects/homepage";
 import LoggedInPage from "./pageObjects/LoggedInPage";
 
-describe("Basic Login Flow", () => {
+describe("Login Flow: Login with credentials and then logout", () => {
   const homePage = new Homepage();
   const loggedInPage = new LoggedInPage();
   it("I Open login page", () => {

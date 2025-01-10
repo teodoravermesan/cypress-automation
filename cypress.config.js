@@ -2,7 +2,7 @@ const { defineConfig } = require("cypress");
 const cucumber = require("cypress-cucumber-preprocessor").default;
 
 module.exports = defineConfig({
-  // reporter: "cypress-mochawesome-reporter",
+  reporter: "cypress-mochawesome-reporter",
   // video: true,
   // retries: 1,
   // reporterOptions: {
